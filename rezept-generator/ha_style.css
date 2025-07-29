@@ -1,9 +1,23 @@
 
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-image: url(ungesunde-lebensmittel.jpg);
+  background-size: cover; background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
 /* Allgemeine Body-Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #89d474;
+  
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,9 +27,11 @@ body {
 
 /* Überschriften-Styles */
 h1, h2, h3 {
-  color: #333;
-  text-align: center;
+ background-image:linear-gradient(rgb(129, 6, 201),rgb(206, 0, 0));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
+
 
 /* Container für den Rezept-Generator */
 #recipeContainer {
@@ -49,7 +65,7 @@ h1, h2, h3 {
 #recipeList li.highlight-ingredient {
     font-weight: bold;
     color: #070305; /* Dunkelpink */
-    background-color: #56b47d; /* Mittleres Pink */
+    background-color: #57d78c; /* Mittleres Pink */
     border: 1px dashed #880e4f; /* Gestrichelter Rand für mehr Sichtbarkeit */
 }
 
@@ -60,7 +76,9 @@ button {
   border: none;
   border-radius: 5px;
   background-color: #9d14cb; /* Pink */
-  color: white;
+  
+  background-image: linear-gradient(rgb(7, 123, 168),rgb(171, 241, 168),rgb(63, 24, 239));
+ -webkit-text-fill-color: black;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.1s ease;
