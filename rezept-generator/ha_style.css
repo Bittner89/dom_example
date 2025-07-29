@@ -1,10 +1,9 @@
-/* style.css */
 
 /* Allgemeine Body-Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #f4f4f4;
+  background-color: #89d474;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,8 +19,8 @@ h1, h2, h3 {
 
 /* Container für den Rezept-Generator */
 #recipeContainer {
-    background-color: #fce4ec; /* Hellrosa */
-    border: 1px solid #e91e63; /* Pink */
+    background-color: #07dbeaa1; /* Hellrosa */
+    border: 1px solid #000000; /* Pink */
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -40,7 +39,7 @@ h1, h2, h3 {
 }
 
 #recipeList li {
-    background-color: #f8bbd0; /* Helles Pink */
+    background-color: #def7d9; /* Helles Pink */
     padding: 6px 10px;
     margin-bottom: 4px;
     border-radius: 3px;
@@ -49,8 +48,8 @@ h1, h2, h3 {
 /* Hervorhebung für bestimmte Zutaten (wird per JavaScript hinzugefügt) */
 #recipeList li.highlight-ingredient {
     font-weight: bold;
-    color: #880e4f; /* Dunkelpink */
-    background-color: #f48fb1; /* Mittleres Pink */
+    color: #070305; /* Dunkelpink */
+    background-color: #56b47d; /* Mittleres Pink */
     border: 1px dashed #880e4f; /* Gestrichelter Rand für mehr Sichtbarkeit */
 }
 
@@ -60,7 +59,7 @@ button {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #e91e63; /* Pink */
+  background-color: #9d14cb; /* Pink */
   color: white;
   cursor: pointer;
   font-size: 16px;
